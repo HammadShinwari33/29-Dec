@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #dbdada;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+}
+header{
+    display: flex;
+    background: rgb(34, 24, 39);
+    color: #fff;
+    padding: 1.5vw 3vw;
+    justify-content: space-between;
+}
+.top-icon{
+    padding-top: 5px;
+    text-decoration: none;
+    color: rgb(233, 236, 35);
+}
+.top-icon:hover{
+    text-decoration: underline;
+}
+.text{
+    background: rgb(6, 26, 112);
+}
+.login-text{
+    padding: 1.5vw 0 1.5vw 3vw;
+    color: #fff;
+}
+.container{
+    height: 36vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sub-container{
+    background: #fff;
+    padding: 3vw;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 4px #8b8686;
+}
+.email-container{
+    padding-top: 5px;
+}
+.password-container{
+    padding-top: 1vw;
+}
+.email{
+    padding: 1vw 3vw 1vw 1vw;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.email:hover,
+.email:focus{
+    border: 2px solid #ccc;
+}
+.password{
+    padding: 1vw 3vw 1vw 1vw;
+    justify-content: flex-start;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.password:hover,
+.password:focus{
+    border: 2px solid #ccc;
+}
+.login-button{
+    padding: 2vw 0 0 0;
+    text-align: center;
+}
+.login{
+    padding: 12px 25px;
+    border: 1px solid rgb(91, 224, 2);
+    background: rgb(91, 224, 2);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+.login:hover{
+    background: rgb(6, 63, 6);
+    border: 1px solid rg;
+    border: 1px solid rgb(6, 63, 6);
+    transition: 0.3s ease-in-out;
+    padding: 12px 40px;
+}
+
+@media(max-width: 1100px){
+    .container{
+        height: 50vw;
+    }
+}
+
+@media(max-width: 475px){
+    header{
+        padding: 3vw 6vw 4vw 4vw;
+    }
+    .pba{
+        font-size: 6vw;
+    }
+    .top-icon{
+        padding-top: 2vw;
+    }
+    .login-text{
+        padding: 3vw 0 4vw 7vw;
+        color: #fff;
+    }
+    .container{
+        height: 80vw;
+    }
+    .sub-container{
+        padding: 8vw 7vw;
+    }
+    .email-container{
+        padding-top: 2vw;
+    }
+    .password-container{
+        padding-top: 3vw;
+    }
+    .email{
+        padding: 2vw 6vw 2vw 2vw;
+    }
+    .password{
+        padding: 2vw 6vw 2vw 2vw;
+    }
+    .login-button{
+        padding-top: 5vw;
+    }
+}

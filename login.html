@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Blogging app</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="pba">Personal Blogging App</h2>
+        <a href="#" class="top-icon" onclick="topSignup()">Sign Up</a>
+    </header>
+
+    <div class="text">
+        <h2 class="login-text">Login</h2>
+    </div>
+    
+    <div class="container">
+
+        <div class="sub-container">
+
+            <div class="logo">
+                
+            </div>
+
+            <div class="email-container">
+                <input type="text" class="email" id="email" placeholder="Email">
+            </div>
+            <div class="password-container">
+                <input type="password" class="password" id="password" placeholder="Password">
+            </div>
+            <div class="login-button">
+                <button class="login" onclick="loginCall()">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>    
+
+    <script src="login.js"></script>
+</body>
+</html>

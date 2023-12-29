@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Blogging App</title>
+
+    <!-- custom file link -->
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+<body style="background: #e7e5e5;">
+    
+    <header>
+        <h2 class="pba">Personal Blog App</h2>
+        <a href="#" class="top-icon" onclick="logout()">Logout</a>
+    </header>
+
+    <div class="text">
+        <h2 class="good-text" id="greeting"></h2>
+    </div>
+
+    <div class="container">
+
+        <div class="sub-container">
+            <h2 class="dash-h2">Title</h2>
+            <input type="text" placeholder="Title" class="title" id="title" required>
+
+            <h2 class="dash-h2">Add Discription</h2>
+            <textarea id="description" cols="50" rows="6" class="discription" placeholder="What is in your Mind" required></textarea>
+
+            <div class="create-button">
+                <button class="create-btn" onclick="createBlog()">Create Blog</button>
+            </div>
+
+        </div>
+
+    </div>    
+
+    <div class="my">
+        <h1 class="my-blogs">My Blogs</h1>
+    </div>
+
+
+    <!-- ===================== Blog ===================== -->
+
+    <!-- <div class="blog-container">
+
+        <div class="blog">
+
+            <div class="i-u">
+                <img src="" alt="" class="blog-img">
+                <h2 class="blog-title">hammad</h2>
+            </div>
+
+            <p class="blog-disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et aut, voluptatibus officia ipsam quasi laudantium alias nihil repellendus architecto doloribus minima cupiditate laboriosam obcaecati sapiente repudiandae fuga incidunt velit? Consectetur libero dolorem, suscipit rerum necessitatibus nesciunt eos nisi ab corrupti veniam porro ducimus quod at. Maxime non tenetur quasi?</p>
+
+            <div class="buttons">
+                <button class="button" id="edit">Edit</button>
+                <button class="button" id="delete">Delete</button>
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <div class="blog-container" id="blogContainer">
+
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>  
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+

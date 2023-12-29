@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp | Blogging app</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="pba">Personal Blogging App</h2>
+        <a href="#" class="top-icon" onclick="toplogin()">Login</a>
+    </header>
+
+    <div class="text">
+        <h2 class="signup-text">Sign Up</h2>
+    </div>
+    
+    <div class="container">
+
+        <div class="form">
+
+            <div class="first-container">
+                <input type="text" class="first" id="firstname" placeholder="First Name" required>
+            </div>
+            <div class="last-container">
+                <input type="text" class="last" id="lastname" placeholder="Last Name" required>
+            </div>
+            <div class="email-container">
+                <input type="text" class="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="password-container">
+                <input type="password" class="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="re-password-container">
+                <input type="password" class="re-password" id="re_password" placeholder="Confirm Password" required>
+            </div>
+            <div class="signup-button">
+                <button class="signup" onclick="signupCall()">Sign Up</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>    
+
+    <script src="signup.js"></script>
+</body>
+</html>

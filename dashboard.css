@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    background: rgb(34, 24, 39);
+    color: #fff;
+    padding: 1vw 2vw;
+    justify-content: space-between;
+}
+.top-icon{
+    padding-top: 7px;
+    text-decoration: none;
+    color: rgb(233, 236, 35);
+}
+.top-icon:hover{
+    text-decoration: underline;
+}
+.text{
+    background: rgb(6, 26, 112);
+}
+.good-text{
+    padding: 1.5vw 0 1.5vw 2vw;
+    color: #fff;
+}
+.container{
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-container{
+    background: #fff;
+    padding: 1vw 3vw 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+.dash-h2{
+    font-weight: 500;
+    padding: 2vh 0;
+}
+.title{
+    padding: 1vh;
+    font-size: 2.5vh;
+    font-weight: 700;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.discription{
+        padding: 1vh;
+        font-size: 2.5vh;
+        font-weight: 700;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+}
+.create-button{
+    padding-top: 1.5vw;
+}
+.create-btn{
+    padding: 2vh 3vh;
+    border-radius: 15px;
+    font-size: 2.3vh;
+    font-weight: 700;
+    border: 2px solid #5727b1;
+    background: #5727b1;
+    color: #fff;
+    cursor: pointer;
+}
+.create-btn:hover{
+    background: #f3f3f3;
+    color: #5727b1;
+    transition: 0.4s ease-in-out;
+}
+.my-blogs{
+    padding-top: 1.5vw;
+    text-align: center;
+}
+
+
+/* ========================= blog ========================== */
+
+.blog-container{
+    padding: 2vw 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 5vw;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 12px;
+    justify-content: center;
+}
+.i-u{
+    display: flex;
+    gap: 1vw;
+}
+.blog-img{
+    width: 65px;
+    height: 65px;
+    border: 2px solid #000;
+    background: rgb(253, 237, 9);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog-disc{
+    color: #000;
+    padding-top: 1.5vw;
+}
+.blog-title{
+    color: #000;
+    padding-top: 1vh;
+}
+.buttons{
+    padding-top: 1.7vw;
+    gap: 2vw;
+}
+.button{
+    background: none;
+    border: none;
+    outline: none;
+    color: blue;
+    cursor: pointer;
+    padding-right: 12px;
+}
+.button:hover{
+    color: red;
+}
+.imgk{
+    display: flex;
+    gap: 1vw;
+}
+.date{
+    color: #ccc
+}
+
+/* ========================= responsive ========================== */
+
+@media(max-width: 1100px){
+    .blog-container{
+        padding: 3vw 11vw;
+    }
+}
+
+@media(max-width: 800px){
+    .sub-container{
+        padding: 3vw 4vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 475px){
+    header{
+        padding: 3vw 6vw 4vw 4vw;
+    }
+    .pba{
+        font-size: 6vw;
+    }
+    .top-icon{
+        padding-top: 1.5vw;
+    }
+    .good-text{
+        padding: 3vw 0 4vw 7vw;
+        color: #fff;
+    }
+    .container{
+        height: 70vh;
+    }
+    .title{
+        width: 90vw;
+    }
+    .discription{
+        width: 90vw;
+    }
+    .blog-container{
+        padding: 5vw 2vw;
+    }
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e4e3e3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    background: rgb(34, 24, 39);
+    color: #fff;
+    padding: 1vw 2vw 1.6vw 2vw;
+    justify-content: space-between;
+}
+.top-icon{
+    padding-top: 12px;
+    text-decoration: none;
+    color: rgb(233, 236, 35);
+}
+.top-icon:hover{
+    text-decoration: underline;
+}
+.text{
+    background: rgb(6, 26, 112);
+}
+.good-text{
+    padding: 1.5vw 0 1.5vw 2vw;
+    color: #fff;
+}
+.container{
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-container{
+    background: #fff;
+    padding: 3vw 25vw 4vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+    gap: 1vw;
+}
+.password{
+    padding: 1.5vh;
+    border-radius: 12px;
+    font-size: 17px;
+    border: 2px solid #ccc;
+}
+.prof-button{
+    padding-top: 1.7vw;
+}
+.prof-btn{
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 2vh;
+    border: 2px solid #571da3;
+    background-color: #571da3;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+.prof-btn:hover{
+    background: #ccc;
+    color: #571da3;
+    transition: 0.4s ease-in-out;
+}
+
+@media(max-width: 800px){
+    .inputs{
+        padding-top: 3.5vw;
+        gap: 1.7vw;
+    }
+    .prof-button{
+        padding-top: 2.5vw;
+    }
+    .prof-btn{
+        font-size: 2vw;
+    }
+}
+
+@media(max-width: 475px){
+    header{
+        padding: 3vw 6vw 4vw 4vw;
+    }
+    .pba{
+        font-size: 6vw;
+    }
+    .top-icon{
+        padding-top: 1vw;
+    }
+    .good-text{
+        padding: 3vw 0 4vw 7vw;
+        color: #fff;
+    }
+    .sub-container{
+        padding: 7vw 12vw;
+    }
+    .inputs{
+        padding-top: 8vw;
+        gap: 2.5vw;
+    }
+    .prof-button{
+        padding-top: 5vw;
+    }
+    .prof-btn{
+        font-size: 3.5vw;
+    }
+}
